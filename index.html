@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to the club</title>
+    <link rel="shortcut icon" href="./perreadora1.jpg" />
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script
+    src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+
+</head>
+<body>
+
+<a-scene>
+        <a-assets>
+            <img id="sky" src="noche.jpg">
+          </a-assets>
+          <a-sky src="#sky" material="" geometry=""></a-sky>
+
+          <a-camera  wasd-controls="acceleration: 7" position="-0.31108 1.66717 2.48877" rotation="2.291831180523268 -2.1772396214971286 0"  ></a-camera>
+
+    <a-entity gltf-model="/baar.gltf" scale="0.3 0.3 0.3" animation-mixer="" position="-9.545 -0.502 1.936"></a-entity>
+
+    <a-entity light="type: point; intensity: 3.78; distance: 50; decay: 4.32; color: #f00068" position="0.15152 2.01388 -5.7718"></a-entity>
+
+    <a-entity light="type: point; intensity: 2.67; distance: 50; decay: 4.32; color: #f00068" position="8.098 0.979 0.46"></a-entity>
+
+    <a-entity light="type: point; intensity: 5.76; distance: 50; decay: 4.32; color: #f00068" position="-0.3487 1.73503 0.83365"></a-entity>
+    
+
+
+
+        <a-asset-item id="perreador" src="/Copia de perreador 2.gltf" position="-0.198 0.164 -0.065"></a-asset-item>
+      </a-assets>
+
+      <a-entity gltf-model="#perreador" animation-mixer position="-0.198 0.164 -0.065"></a-entity>
+
+
+
+      <a-assets>
+        <a-asset-item id="perreador2" src="/Copia de perreador3.gltf" ></a-asset-item>
+      </a-assets>
+
+      <a-entity gltf-model="#perreador2" animation-mixer scale="1.2 1.2 1.2" position="-2.009 0.079 -5.163" rotation="0 50.833 0"></a-entity>
+
+
+
+
+      <a-assets>
+        <a-asset-item id="mujer1" src="/mujer1.gltf" ></a-asset-item>
+      </a-assets>
+
+      <a-entity gltf-model="#mujer1" animation-mixer scale="0.180 0.180 0.180" position="-1.369 0.096 -4.675" rotation="0 50.833 0"></a-entity>
+
+
+
+      <a-assets>
+        <a-asset-item id="perreador4" src="/perreador 4.gltf" ></a-asset-item>
+      </a-assets>
+
+      <a-entity gltf-model="#perreador4" animation-mixer scale="1.1 1.1 1.1" position="2.993 0.090 -2.823" rotation="0 50.833 0"></a-entity>
+
+
+
+      <a-assets>
+        <a-asset-item id="perreador5" src="/perreador 5.gltf" ></a-asset-item>
+      </a-assets>
+
+      <a-entity gltf-model="#perreador5" animation-mixer scale="1.2 1.2 1.2" position="3.554 0.100 -2.434" rotation="0 16.901 0"></a-entity>
+
+
+      <a-assets>
+        <a-asset-item id="perreador7" src="/perreador 7.gltf" ></a-asset-item>
+      </a-assets>
+
+      <a-entity gltf-model="#perreador7" animation-mixer scale="0.5 0.5 0.5" position="6.303 0.100 0.539" rotation="0 179.08 0"></a-entity>
+
+
+
+      <meta name="apple-mobile-web-app-capable" content="yes">
+
+   
+      <a-video id="gasolinak" autoplay loop="true" src="/gasolina k mute.mp4" position="0.74 4.000 -6.952" scale="2.004 1.161 0.600" webkit-playsinline playsinline> </a-video>
+  
+
+ <a-sound src="/gasolina recortado-.mp3" autoplay="true" position="6.466 0.688 -6.364" volume="2">
+      </a-sound>
+
+
+      <a-entity
+      environment="horizonColor:  #000000;  groundColor2:  #0d0c0d;  groundColor:  #000000;  lightPosition:  [object Object];  skyColor:  #2205ff;  groundTexture:  walkernoise;  flatShading:  true;  shadowSize:  9.82;  lighting:  none;  ground:  canyon;  dressingAmount:  298;  dressing:  arches;  active:  true;  seed:  17;  skyType:  gradient;  fog:  0.8;  groundYScale:  20;  dressingColor:  #3cf7ed;  dressingScale:  0.2;  dressingVariance:  [object Object];  dressingOnPlayArea:  1;  gridColor:  #239893;  preset:  dream"
+a-entity>
+     
+        </a-scene>
+
+
+
+
+</body>
+</html>
